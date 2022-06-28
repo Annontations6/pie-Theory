@@ -11,7 +11,7 @@ function Theta() {
 
 document.getElementById("cost1").onclick = () => {
     if (rho.gte(theta.price) == true) {
-        document.getElementById("cost1").innerHTML = "Cost:" + theta.price + "(&theta; = " + getTheta(theta.level) ")"
+        document.getElementById("cost1").innerHTML = "Cost:" + theta.price + "(&theta; = " + getTheta(theta.level) + ")"
     }
 }
 
