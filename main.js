@@ -1,6 +1,6 @@
 var rho = new OmegaNum(0)
 
-var getTheta = (level) = new OmegaNum(level * 2)
+var getTheta = (level) => new OmegaNum(level * 2)
 
 theta = new Theta();
 
