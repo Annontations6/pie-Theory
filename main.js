@@ -10,6 +10,6 @@ function Theta() {
 }
 
 setInterval(() => {
-    rho = rho.times(getTheta(theta.level)).add(1)
+    rho = rho.add(new OmegaNum(1).times(getTheta(theta.level).add(1)))
     document.getElementById("rho").innerHTML = "You Have " + rho + " Rho"
 }, 100);
