@@ -1,4 +1,4 @@
-var theta = new OmegaNum(0)
+var rho = new OmegaNum(0)
 
 var getTheta = (level) => new OmegaNum(level * 2)
 var getDelta = (level) => new OmegaNum(level * 5)
