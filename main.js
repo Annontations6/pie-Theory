@@ -9,6 +9,12 @@ function Theta() {
     this.price = new OmegaNum(25)
 }
 
+document.getElementById("cost1").onclick = () => {
+    if (rho.gte(theta.price) == true) {
+        document.getElementById("cost1").innerHTML = "Cost:" + theta.price + "(&theta; = " + getTheta(theta.level) ")"
+    }
+}
+
 setInterval(() => {
     rho = rho.add(new OmegaNum(1).times(getTheta(theta.level).add(1)))
     document.getElementById("rho").innerHTML = "You Have " + rho + " Rho"
