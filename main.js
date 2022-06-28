@@ -13,7 +13,7 @@ document.getElementById("cost1").onclick = () => {
     if (rho.gte(theta.price) == true) {
         rho = rho.sub(theta.price)
         theta.price = theta.price.mul(1.3)
-        level += 1
+        theta.level += 1
         document.getElementById("cost1").innerHTML = "Cost:" + theta.price + "(&theta; = " + getTheta(theta.level) + ")"
     }
 }
