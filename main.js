@@ -11,4 +11,5 @@ function Theta() {
 
 setInterval(() => {
     rho = rho.times(getTheta(theta.level)).add(1)
+    document.getElementById("rho").innerHTML = "You Have " + rho + " Rho"
 }, 100);
